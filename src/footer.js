@@ -1,9 +1,7 @@
 function Footer() {
   return (
     <footer class="page-footer">
-			<div class="container">
-        <h2 class="text-center">Footer</h2>
-			</div>
+			<h2 class="text-center">Footer</h2>
     </footer>
   );
 }
