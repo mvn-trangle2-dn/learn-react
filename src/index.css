@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.text-center {
+  text-align: center;
+}
+.page-header .logo {
+  width: 80px;
+}
+.page-header .header-nav li {
+  padding: 0 15px;
+}
+.page-header .header-actions li {
+  padding: 0 8px;
+}
+.page-main {
+  min-height: 80vh;
+  position: relative;
+}
+.page-main .main-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.page-main .react-logo {
+  width: 300px;
+}
+.page-footer {
+  padding: 20px 0;
+  background: #f1f1f1;
+}
+.btn-block {
+  padding: 15px;
+}
+.navigate-block {
+  margin-bottom: 50px;
+}
+.navigate-block .navigate-item {
+  padding: 25px 15px;
+}
+.btn {
+  margin-bottom: 10px;
+}
