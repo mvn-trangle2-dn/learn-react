@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Circle from './Circle';
+import Form from "./form";
 // import logo from './logo.svg';
 
 class Main extends Component {
@@ -61,56 +62,7 @@ class Main extends Component {
     return (
       <main className="page-main">
         <div className="container">
-          <div className="main-content">
-            <div className="navigate-block text-center">
-              <a className="navigate-item" onClick={() => this.redirectPage('home')} href="#">Home</a>
-              <a className="navigate-item" onClick={() => this.redirectPage('about')} href="#">About</a>
-              <a className="navigate-item" onClick={() => this.redirectPage('list')} href="#">List</a>
-            </div>
-            {
-              (page === 'home') && 
-              <div className="circle-block d-flex justify-center">
-                <Circle number="30"></Circle>
-                <Circle number="40"></Circle>
-                <Circle number="50"></Circle>
-              </div>
-            }
-            {(page === 'about') && <p className="text-center">About Page</p>}
-            {
-              (page === 'list') && 
-              <div>
-                {listArticle.length ?
-                <ul>
-                  {listArticle.map((i, index) => 
-                    <li className="d-flex">
-                      <span style={{backgroundColor: i.color}} className="color-label"></span>
-                      <div className="d-flex">
-                        <div>
-                          <h3>{i.title}</h3>
-                          <p>{i.description}</p>
-                        </div>
-                        <button onClick={() => this.removeItem(index)}>X</button>
-                      </div>
-                    </li>
-                  )}
-                </ul>
-                : <p>Empty List!</p>}
-              </div>
-            }
-            {/* { this.state.page === 'home' ?
-              <div className="circle-block d-flex justify-center">
-                <Circle number="30"></Circle>
-                <Circle number="40"></Circle>
-                <Circle number="50"></Circle>
-              </div> : 
-              <p className="text-center">About Page</p>
-            } */}
-            
-            {/* <a href="/">
-              <img src={logo} className="react-logo" alt="react-logo"/>
-            </a>
-            <h2>Hello React!</h2> */}
-          </div>
+          <Form/>
         </div>
       </main>
     );
