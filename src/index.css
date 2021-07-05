@@ -24,6 +24,15 @@ ul li {
   display: flex;
   align-items: center;
 }
+.align-start {
+  align-items: flex-start;
+}
+.col-3 {
+  width: 30%;
+}
+.col-6 {
+  width: 60%;
+}
 .justify-between {
   justify-content: space-between;
 }
@@ -70,10 +79,118 @@ ul li {
 }
 .btn {
   margin-bottom: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-size: 1.125rem;
+  height: 40px;
+  color: #fff;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 400ms ease;
+  border: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  background: #0f3661;
+  width: 100%;
 }
 .color-label {
   width: 80px;
   height: 80px;
   border-radius: 8px;
   margin-right: 10px;
+}
+button:hover {
+  background-color: #05144a;
+  color: white;
+}
+/* form */
+form {
+  border: 1px solid #05144a;
+  border-radius: 5px;
+  text-align: left;
+  padding: 15px;
+}
+.form-group {
+  margin-bottom: 14px;
+}
+.form-label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+input[type="text"], input[type="password"] {
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  background: white;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+}
+.form-select {
+  position: relative;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+}
+.form-select:after {
+  content: " ";
+  display: block;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-top: 7px solid #05144a;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  pointer-events: none;
+}
+textarea {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+/* table */
+table {
+  background: #f8f8f8;
+  border-collapse: collapse;
+  width: 100%;
+  transition: all 0.4s;
+  border-spacing: 0;
+}
+table tr {
+  border-bottom: 1px solid #AEB5B8;
+  cursor: pointer;
+}
+table tr:hover {
+  background: #fff;
+}
+table td, th {
+  padding: 16px 8px;
+  text-align: left;
+}
+table th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #0F3661;
+  font-weight: 400;
+  white-space: nowrap;
 }
