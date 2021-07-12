@@ -194,3 +194,6 @@ table th {
   font-weight: 400;
   white-space: nowrap;
 }
+.paginate-item {
+  padding: 0 10px;
+}

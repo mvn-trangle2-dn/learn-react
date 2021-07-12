@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import FetchApi from "./fetchApi";
 // import Circle from './Circle';
 // import Form from "./form";
-import FormHooks from "./formHooks";
+// import FormHooks from "./formHooks";
 // import logo from './logo.svg';
 
 class Main extends Component {
@@ -64,7 +65,8 @@ class Main extends Component {
       <main className="page-main">
         <div className="container">
           {/* <Form/> */}
-          <FormHooks/>
+          {/* <FormHooks/> */}
+          <FetchApi/>
         </div>
       </main>
     );
