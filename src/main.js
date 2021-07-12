@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Circle from './Circle';
-import Form from "./form";
+// import Circle from './Circle';
+// import Form from "./form";
+import FormHooks from "./formHooks";
 // import logo from './logo.svg';
 
 class Main extends Component {
@@ -58,11 +59,12 @@ class Main extends Component {
   }
 
   render() {
-    const { page, listArticle } = this.state;
+    // const { page, listArticle } = this.state;
     return (
       <main className="page-main">
         <div className="container">
-          <Form/>
+          {/* <Form/> */}
+          <FormHooks/>
         </div>
       </main>
     );
