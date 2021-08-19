@@ -21,6 +21,6 @@ export const favoriteSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { toggle } = favoriteSlice.actions
+export const { toggle } = favoriteSlice.actions;
 
 export default favoriteSlice.reducer;
