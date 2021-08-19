@@ -1,8 +1,11 @@
 import React, { useState }  from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const [logo] = useState('https://image.pngaaa.com/930/2507930-middle.png');
+  const favs = useSelector(state => state.favorite.value);
+  const isLogin = useSelector((state) => state.isLogin.value);
 
   return (
     <div className="container">
@@ -25,9 +28,14 @@ const Header = () => {
         </ul>
         <ul className="header-actions d-flex">
           <li>
-            <Link to="/account"><i className="fa fa-user"></i></Link>
+            <Link to={`/${isLogin ? 'account' : 'auth/login'}`}><i className="fa fa-user"></i></Link>
           </li>
-          <li><a href="/"><i className="fa fa-shopping-cart"></i></a></li>
+          <li className="header-favorite">
+            <a href="/">
+              <i className="fa fa-heart"></i>
+              <span>{favs.length}</span>
+            </a>
+          </li>
         </ul>
       </header>
     </div>

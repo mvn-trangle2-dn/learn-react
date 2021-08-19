@@ -1,0 +1,19 @@
+.page-header {
+  .header-actions {
+    i {
+      @include pxRem(font-size, 18);
+    }
+    .header-favorite {
+      position: relative;
+      i {
+        color: red;
+      }
+      span {
+        @include pxRem(top, -5);
+        right: 0;
+        position: absolute;
+
+      }
+    }
+  }
+}

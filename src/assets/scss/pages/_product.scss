@@ -1,0 +1,24 @@
+.products-page {
+  .product-item {
+    @include pxRem(margin, 15 0);
+    position: relative;
+    border: 1px solid darkolivegreen;
+    .product-img {
+      @include pxRem(height, 180);
+      width: 100%;
+    }
+    .product-favorite {
+      @include pxRem(font-size, 18);
+      @include pxRem(top, 10);
+      @include pxRem(right, 10);
+      position: absolute;
+      z-index: 100;
+    }
+    .active {
+      color: red;
+    }
+    .product-info {
+      @include pxRem(padding, 10);
+    }
+  }
+}
